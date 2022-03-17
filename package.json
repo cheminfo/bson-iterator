@@ -1,6 +1,6 @@
 {
   "name": "bson-iterator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create an iterator from a BSON stream",
   "main": "lib/index.js",
   "module": "src/index.js",
