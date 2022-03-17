@@ -1,7 +1,7 @@
 import { deserialize } from 'bson';
 
 /**
- * Returns a very important number
+ * Returns an iterator on a BSON containing srream
  * @param {ReadStream} [readStream]
  */
 export async function* bsonIterator(readStream) {
