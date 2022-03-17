@@ -22,10 +22,7 @@ import { bonIterator } from 'bson-iterator';
 import { join } from 'path';
 import { createReadStream } from 'fs';
 
-const readStream = createReadStream(join(__dirname, 'yourFile.bson'), {
-  highWaterMark: 2 ** 20,
-});
-const results = [];
+const readStream = createReadStream(join(__dirname, 'yourFile.bson'));
 for await (const entry of bsonIterator(readStream)) {
   console.log(entry);
 }
